@@ -1,7 +1,7 @@
 # EKS clustercreation using eksctl:
 
 # Step1: Create a IAM Admin policy
-
+```python
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -162,15 +162,19 @@
         }
     ]
 }
+```
 # Step2: Create IAM Role with Admin policy for eks-cluster and attach to ec2-instance
 # Step3: Install awscli version2
-  ( curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  ```python  
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
    unzip awscliv2.zip
    sudo ./aws/install
 
    Confirm the installation with the following command.
 
-   aws --version )
+   aws --version 
+
+   ```
 
 # Step4: Install eksctl:
     curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
@@ -192,6 +196,7 @@
     eksctl create cluster --region=ap-south-1 --name=mynode
 					  
 # Commands:
+```python
   eksctl create cluster --region=ap-south-1 --name=mycluster
   kubectl get nodes
   kubectl apply -f filename.yml
@@ -199,14 +204,23 @@
   kubectl get service filename
   kubectl scale --replicas=10 deployment filename.
   kubectl get pods --all-namespaces // to check all namespaces
+  ```
 
 # CleanUP
+```
 Delete node-group:
 			   
 eksctl delete cluster --region=ap-south-1 --name=mynode
+
+```	      
 		      
-		      
-# Note: Error: error: exec plugin: invalid apiVersion "client.authentication.k8s.io/v1alpha1"
+# Note: Error: 
+
+error: exec plugin: invalid apiVersion "client authentication.k8s.io/v1alpha1"
+ ```
   Fix:
+
    1) pip3 install awscli --upgrade --user
+   
    2) aws eks update-kubeconfig --name mynode --region ap-south-1
+```
