@@ -164,13 +164,13 @@
 }
 # Step2: Create IAM Role with Admin policy for eks-cluster and attach to ec2-instance
 # Step3: Install awscli version2
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   unzip awscliv2.zip
+   sudo ./aws/install
 
-Confirm the installation with the following command.
+   Confirm the installation with the following command.
 
-aws --version
+   aws --version
 
 # Step4: Install eksctl:
     curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
