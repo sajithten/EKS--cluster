@@ -65,7 +65,7 @@
                 "ssm:GetParameters"
             ],
             "Resource": [
-                "arn:aws:ssm:*:016124700666:parameter/aws/*",
+                "arn:aws:ssm:*:670053109278:parameter/aws/*",
                 "arn:aws:ssm:*::parameter/aws/*"
             ],
             "Effect": "Allow"
@@ -116,7 +116,7 @@
                 "iam:ListPolicyVersions"
             ],
             "Resource": [
-                "arn:aws:iam::016124700666:instance-profile/eksctl-*",
+                "arn:aws:iam::670053109278:instance-profile/eksctl-*",
                 "arn:aws:iam::016124700666:role/eksctl-*",
                 "arn:aws:iam::016124700666:policy/eksctl-*",
                 "arn:aws:iam::016124700666:oidc-provider/*",
