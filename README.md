@@ -117,11 +117,11 @@
             ],
             "Resource": [
                 "arn:aws:iam::670053109278:instance-profile/eksctl-*",
-                "arn:aws:iam::016124700666:role/eksctl-*",
-                "arn:aws:iam::016124700666:policy/eksctl-*",
-                "arn:aws:iam::016124700666:oidc-provider/*",
-                "arn:aws:iam::016124700666:role/aws-service-role/eks-nodegroup.amazonaws.com/AWSServiceRoleForAmazonEKSNodegroup",
-                "arn:aws:iam::016124700666:role/eksctl-managed-*"
+                "arn:aws:iam::670053109278:role/eksctl-*",
+                "arn:aws:iam::670053109278:policy/eksctl-*",
+                "arn:aws:iam::670053109278:oidc-provider/*",
+                "arn:aws:iam::670053109278:role/aws-service-role/eks-nodegroup.amazonaws.com/AWSServiceRoleForAmazonEKSNodegroup",
+                "arn:aws:iam::670053109278:role/eksctl-managed-*"
             ]
         },
         {
@@ -130,7 +130,7 @@
                 "iam:GetRole"
             ],
             "Resource": [
-                "arn:aws:iam::016124700666:role/*"
+                "arn:aws:iam::670053109278:role/*"
             ]
         },
         {
